@@ -1,8 +1,6 @@
 #!/bin/bash
 
-## DEFINE FUNCTIONS ##
 
-# function to display a string
 function display_str {
     if [ ${#1} -ge 74 ]; then
 	return 0
@@ -53,7 +51,6 @@ function display_header {
 # function to display the footer of the script
 function display_footer {
     display_full_line
-    echo "|                                                              by LuigiPeace  |"
     display_full_line
 }
 
@@ -80,7 +77,6 @@ function display_key_value {
     echo "|"
 }
 
-## ENDIF FUNCTIONS ##
 
 
 
