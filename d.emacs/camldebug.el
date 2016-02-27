@@ -1,37 +1,3 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; camldebug.el - Run ocamldebug / camldebug under Emacs.
-;; Derived from gdb.el.
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;         Copying is covered by the GNU General Public License.
-;;
-;;    This program is free software; you can redistribute it and/or modify
-;;    it under the terms of the GNU General Public License as published by
-;;    the Free Software Foundation; either version 2 of the License, or
-;;    (at your option) any later version.
-;;
-;;    This program is distributed in the hope that it will be useful,
-;;    but WITHOUT ANY WARRANTY; without even the implied warranty of
-;;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-;;    GNU General Public License for more details.
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;                                 History
-;;
-;;itz 04-06-96 I pondered basing this on gud. The potential advantages
-;;were: automatic bugfix , keymaps and menus propagation.
-;;Disadvantages: gud is not so clean itself, there is little common
-;;functionality it abstracts (most of the stuff is done in the
-;;debugger specific parts anyway), and, most seriously, gud sees it
-;;fit to add C-x C-a bindings to the _global_ map, so there would be a
-;;conflict between camldebug and gdb, for instance. While it's OK to
-;;assume that a sane person doesn't use gdb and dbx at the same time,
-;;it's not so OK (IMHO) for gdb and camldebug.
-
-;;Albert Cohen 04-97: Patch for Tuareg support.
-;;Albert Cohen 05-98: A few patches and OCaml customization.
-;;Albert Cohen 09-98: XEmacs support and some improvements.
-;;Erwan Jahier and Albert Cohen 11-05: support for camldebug 3.09.
 
 (require 'comint)
 (require 'shell)

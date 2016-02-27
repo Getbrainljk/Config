@@ -1,38 +1,3 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; sym-lock.el - Extension of Font-Lock mode for symbol fontification.
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;        Copyright (C) 1997-2004 Albert Cohen, all rights reserved.
-;;         Copying is covered by the GNU General Public License.
-;;
-;;    This program is free software; you can redistribute it and/or modify
-;;    it under the terms of the GNU General Public License as published by
-;;    the Free Software Foundation; either version 2 of the License, or
-;;    (at your option) any later version.
-;;
-;;    This program is distributed in the hope that it will be useful,
-;;    but WITHOUT ANY WARRANTY; without even the implied warranty of
-;;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-;;    GNU General Public License for more details.
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;                                 History
-;;
-;; first prototype by wg <wg@cs.tu-berlin.de> 5-96
-;; tweaked by Steve Dunham <dunham@gdl.msu.edu> 5-96
-;; rewritten and enhanced by Albert Cohen <Albert.Cohen@inria.fr> 3-97
-;;   new symbol-face format and ergonomy improvement 2-98
-;;   major step towards portability and customization 5-98
-;;   removed bug with multiple appends in hook by 3-99
-;;   removed use-fonts check (due to incomatibilities) 9-00
-;;   new after-change/pre-idle policy 6-01
-;;   disable M$ Windows (symbol font problem) and fixed movement bug
-;;     (incompatibile atomic-extents and paren) 8-01
-;;   check for the availability of a symbol font 1-02
-;;   patch size inference and use the upper bound (of <= sizes) 1-02
-;;   support for custom replacement faces (e.g., for the lambda symbol) 10-04
-
-;; look at the symbol font? check out: xfd -fn '-adobe-symbol-*--14-*'
 
 (require 'cl)
 (require 'font-lock)
