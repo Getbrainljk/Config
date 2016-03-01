@@ -1,1 +1,1 @@
-Emacs configuration.
+Emacs&Bashrc configuration.
